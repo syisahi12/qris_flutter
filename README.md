@@ -16,7 +16,7 @@ A Flutter application for generating dynamic QRIS codes, based on the work by [R
 1. Ensure you have Flutter installed on your system
 2. Clone this repository:
 ```bash
-git clone [https://github.com/yourusername/flutter-qris-generator.git](https://github.com/syisahi12/qris_flutter.git)
+git clone https://github.com/syisahi12/qris_flutter.git
 ```
 3. Navigate to the project directory:
 ```bash
