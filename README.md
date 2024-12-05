@@ -88,7 +88,7 @@ lib/
 
 ## Credits
 
-This project is a Flutter implementation based on the [qris-dinamis](https://github.com/rasizek/qris-dinamis) Node.js package by Rachma Azis.
+This project is a Flutter implementation based on the [qris-dinamis](https://github.com/razisek/Qris-Dinamis) Node.js package by Rachma Azis.
 
 ## License
 
