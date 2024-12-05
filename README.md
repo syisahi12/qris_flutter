@@ -1,16 +1,103 @@
-# qris
+# Flutter QRIS Generator
 
-A new Flutter project.
+A Flutter application for generating dynamic QRIS codes, based on the work by [Rachma Azis](https://github.com/rasizek).
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Generate dynamic QRIS codes from static QRIS strings
+- Input custom nominal amounts
+- Real-time QR code preview
+- Material Design 3 UI
+- Form validation
+- CRC16 checksum validation
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Ensure you have Flutter installed on your system
+2. Clone this repository:
+```bash
+git clone [https://github.com/yourusername/flutter-qris-generator.git](https://github.com/syisahi12/qris_flutter.git)
+```
+3. Navigate to the project directory:
+```bash
+cd qris_flutter
+```
+4. Install dependencies:
+```bash
+flutter pub get
+```
+5. Run the application:
+```bash
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usage
+
+1. Launch the application
+2. Enter your static QRIS ID in the first input field
+3. Enter the nominal amount in the second input field
+4. Click "Generate QR Code"
+5. The dynamic QR code will be displayed below the form
+
+## Code Example
+
+```dart
+// Generate dynamic QRIS string
+final qrisString = makeString(
+  staticQrisId,
+  {'nominal': nominalAmount},
+);
+
+// Display QR code
+QrImageView(
+  data: qrisString,
+  version: QrVersions.auto,
+  size: 200.0,
+);
+```
+
+## Parameters
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| qrisId    | Yes      | The static QRIS ID to be converted |
+| nominal   | Yes      | The nominal amount for the dynamic QRIS |
+| taxtype   | No       | Tax type ('p' for percentage, 'r' for rupiah) |
+| fee       | No       | Tax fee amount |
+
+## Dependencies
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  qr_flutter: ^4.1.0
+  cupertino_icons: ^1.0.2
+```
+
+## Project Structure
+
+```
+lib/
+├── main.dart
+├── screens/
+│   └── qr_generator_screen.dart
+└── utils/
+    └── qris_generator.dart
+```
+
+## Credits
+
+This project is a Flutter implementation based on the [qris-dinamis](https://github.com/rasizek/qris-dinamis) Node.js package by Rachma Azis.
+
+## License
+
+MIT License
+
+## Author
+
+Your Name
+
+---
+
+Original QRIS Dynamic Generator by [Rachma Azis](https://github.com/rasizek)
