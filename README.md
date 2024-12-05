@@ -100,4 +100,4 @@ Your Name
 
 ---
 
-Original QRIS Dynamic Generator by [Rachma Azis](https://github.com/rasizek)
+Original QRIS Dynamic Generator by [Rachma Azis](https://github.com/razisek)
