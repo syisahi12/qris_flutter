@@ -1,6 +1,6 @@
 # Flutter QRIS Generator
 
-A Flutter application for generating dynamic QRIS codes, based on the work by [Rachma Azis](https://github.com/rasizek).
+A Flutter application for generating dynamic QRIS codes, based on the work by [Rachma Azis](https://github.com/razisek).
 
 ## Features
 
